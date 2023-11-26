@@ -10,7 +10,10 @@ services:
     volumes:
       - web-data:/usr/share/nginx/html
     deploy:
+      mode: replicated
       replicas: 3
+      placement:
+        max_replicas_per_node: 1
 
 volumes:
   web-data: {}
