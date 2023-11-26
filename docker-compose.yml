@@ -9,7 +9,8 @@ services:
     init: true
     volumes:
       - web-data:/usr/share/nginx/html
-    scale: 3
+    deploy:
+      replicas: 3
 
 volumes:
   web-data: {}
