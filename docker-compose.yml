@@ -9,6 +9,7 @@ services:
     init: true
     volumes:
       - web-data:/usr/share/nginx/html
+    scale: 3
 
 volumes:
   web-data: {}
