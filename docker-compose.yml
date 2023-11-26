@@ -1,6 +1,9 @@
 services:
   web:
-    image: nginx:alpine
+    image: bazigan/myweb
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "80:80"
     init: true
