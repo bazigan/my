@@ -1,6 +1,6 @@
 services:
   web:
-    image: bazigan/myweb
+    image: bazigan/myweb:1.0
     build:
       context: .
       dockerfile: Dockerfile
