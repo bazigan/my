@@ -1,0 +1,11 @@
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    init: true
+    volumes:
+      - web-data:/usr/share/nginx/html
+
+volumes:
+  web-data: {}
